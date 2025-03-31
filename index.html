@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>调查问卷</title>
+</head>
+<body>
+  <h2>用户调查问卷</h2>
+
+  <form id="surveyForm">
+    <label for="gender">请选择您的性别:</label>
+    <select id="gender">
+      <option value="male">男</option>
+      <option value="female">女</option>
+      <option value="other">其他</option>
+    </select>
+    <br><br>
+
+    <label for="age">请输入您的年龄:</label>
+    <input type="number" id="age">
+    <br><br>
+
+    <button type="button" onclick="processForm()">提交</button>
+  </form>
+
+  <p id="greetingMessage"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
